@@ -1,0 +1,30 @@
+<div class="card-component__main">
+  <ng-container *ngFor="let moeda of moedasSelecionadas">
+    <div class="card-component__container">
+      <div class="card-header__component">
+        <h3>{{ obterNomeMoeda(moeda) }}</h3>
+      </div>
+      <div class="error-message" *ngIf="errorOccurred">
+        <p>Algo deu errado</p>
+        <button (click)="reload()">RECARREGAR</button>
+      </div>
+      <div class="loading" *ngIf="loading">
+        <img src="assets/Loader.png" alt="" />
+      </div>
+      <div class="card-display__component">
+        <p [class]="getClasseEstilo(moeda.bid)">R$ {{ moeda.bid }}</p>
+      </div>
+      <div class="card-footer__component">
+        <div class="card-footer__variacao">
+          <span>Variação (%)</span>
+          <p [class]="getClasseEstilo(moeda.varBid)">{{ moeda.varBid }}</p>
+        </div>
+        <span></span>
+        <div class="card-footer__atualizado">
+          <span>Atualizado</span>
+          <p>{{ moeda.create_date | date : "HH:mm:ss" }}</p>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</div>

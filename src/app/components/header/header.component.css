@@ -1,0 +1,14 @@
+.header-component {
+  background-color: #ffffff;
+  width: 100%;
+  height: 100px;
+  z-index: 999;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-component > img {
+  height: 50%;
+}

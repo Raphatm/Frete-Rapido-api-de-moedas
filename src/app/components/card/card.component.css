@@ -1,0 +1,129 @@
+.card-component__main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+.card-component__container {
+  margin-top: 250px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 430px;
+  height: 430px;
+  margin-right: 20px;
+  margin-left: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card-header__component {
+  background-color: #f6f6f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+}
+
+.card-header__component > h3 {
+  color: #717171;
+  font-size: 30px;
+}
+
+.card-display__component {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.card-display__component > p {
+  font-weight: 500;
+  font-size: 64px;
+}
+
+.card-footer__component {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 110px;
+  border-top: 1px solid #cccccc;
+}
+
+.card-footer__component > span {
+  border-left: 1px solid #cccccc;
+  height: inherit;
+}
+
+.card-footer__component > .card-footer__variacao > span,
+.card-footer__component > .card-footer__atualizado > span {
+  color: #919191;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.card-footer__component > .card-footer__variacao > p,
+.card-footer__component > .card-footer__atualizado > p {
+  color: #717171;
+  padding: 5px 10px 10px 10px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/*Classes para as chamadas TypeScript*/
+.vermelho {
+  color: #dd4b4b;
+}
+
+.verde {
+  color: #3c7649;
+}
+
+.azul {
+  color: #3684cb;
+}
+
+.error-message {
+  color: #717171;
+  background: #ffffff;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.error-message > button {
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.loading-indicator {
+  display: block;
+}
+
+.loading {
+  background: #ffffff;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading img {
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
