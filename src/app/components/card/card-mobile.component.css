@@ -29,10 +29,15 @@
     font-size: 18px;
   }
   .error-message {
-    height: 200px;
+    height: 150px;
+    width: 230px;
   }
   .loading {
-    height: 200px;
+    height: 150px;
+    width: 230px;
+  }
+  .card-display__component.error-occurred {
+    display: none !important;
   }
 }
 
@@ -72,9 +77,14 @@
     font-size: 18px;
   }
   .error-message {
-    height: 200px;
+    height: 150px;
+    width: 230px;
   }
   .loading {
-    height: 200px;
+    height: 150px;
+    width: 230px;
+  }
+  .card-display__component.error-occurred {
+    display: none !important;
   }
 }

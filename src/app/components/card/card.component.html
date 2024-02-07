@@ -11,7 +11,7 @@
       <div class="loading" *ngIf="loading">
         <img src="assets/Loader.png" alt="" />
       </div>
-      <div class="card-display__component">
+      <div class="card-display__component" *ngIf="!loading && !errorOccurred">
         <p [class]="getClasseEstilo(moeda.bid)">R$ {{ moeda.bid }}</p>
       </div>
       <div class="card-footer__component">
