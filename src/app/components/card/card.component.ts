@@ -36,7 +36,7 @@ export class CardComponent implements OnInit {
           this.moedasSelecionadas = moedasArray.filter((moeda) =>
             this.isMoedaValida(moeda)
           );
-          this.errorOccurred = false; // Reset do erro (se colocar aqui como true vc consegue ver o erro e a sequencia de loading. Só não esquece de reverter depois de usar.)
+          this.errorOccurred = true; // Reset do erro (se colocar aqui como true vc consegue ver o erro e a sequencia de loading. Só não esquece de reverter depois de usar.)
           this.loading = false; // Desativa o indicador de carregamento
         } else {
           console.error('Dados recebidos não são um objeto:', dados);

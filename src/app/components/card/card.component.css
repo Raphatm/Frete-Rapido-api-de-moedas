@@ -88,7 +88,8 @@
 .error-message {
   color: #717171;
   background: #ffffff;
-  height: 400px;
+  height: 310px;
+  width: 430px;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -109,7 +110,8 @@
 
 .loading {
   background: #ffffff;
-  height: 400px;
+  height: 310px;
+  width: 430px;
   display: flex;
   justify-content: center;
   align-items: center;
