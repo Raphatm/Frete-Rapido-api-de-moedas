@@ -14,7 +14,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 - Eu fiz alguma pequenas modificações de tamanho para ajustar melhor tanto nos iPad's como em mobile ok? Não me matem por isso, please!
 
-- qualquer dúvida ou caso vocês precisem entender alguma coisa, podem me procurar que ajudo vocês.
+- Qualquer dúvida ou caso vocês precisem entender alguma coisa, podem me procurar que ajudo vocês.
 
 ## Code scaffolding
 
